@@ -3,7 +3,7 @@ import './App.css';
 import enTranslations from '@shopify/polaris/locales/en.json';
 import { 
   AppProvider, Page, Grid, Text, TextField, Card,
-  MediaCard, 
+  MediaCard, Thumbnail,
   InlineStack,Button, FooterHelp, Link,
   Toast, Frame, Scrollable, BlockStack
 } from '@shopify/polaris';
@@ -16,16 +16,14 @@ function App() {
   
   return (
     <AppProvider i18n={enTranslations}>
-      <video width="100%" autoplay="autoplay">
+      <video width="100%" autoplay="autoplay" loop="loop">
         <source src="flow-hire.mp4"/>
       </video>
       <Frame>
-      <Page title="Shopify Automation With A Smile" 
-      subtitle="Whether you're looking for services or tools, we've got you covered."
-      >
+      <Page>
         <BlockStack gap="500">
           <MediaCard
-            title="Getting Started"
+            title="Shopify automation with a smile"
             primaryAction={{
               content: 'Learn about getting started',
               onAction: () => {},
@@ -50,14 +48,19 @@ function App() {
 
         </BlockStack>
         <FooterHelp>
-          Find me on  {' '}
-          <Link monochrome url="https://twitter.com/kalenjordan">
-            Twitter
-          </Link>
-          {' '} or {' '}
-          <Link monochrome url="https://linkedin.com/in/kalen">
-            LinkedIn
-          </Link>.
+          <InlineStack gap="200">
+          <Thumbnail size="extraSmall" source="kalen-circle.png" />
+          <Text>
+            Find me on  {' '}
+            <Link monochrome url="https://twitter.com/kalenjordan">
+              Twitter
+            </Link>
+            {' '} or {' '}
+            <Link monochrome url="https://linkedin.com/in/kalen">
+              LinkedIn
+            </Link>.
+          </Text>
+          </InlineStack>
 
         </FooterHelp>
       </Page>
