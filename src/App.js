@@ -2,7 +2,8 @@ import './App.css';
 
 import enTranslations from '@shopify/polaris/locales/en.json';
 import { 
-  AppProvider, Page, Grid, Text, TextField, Card, 
+  AppProvider, Page, Grid, Text, TextField, Card,
+  MediaCard, 
   InlineStack,Button, FooterHelp, Link,
   Toast, Frame, Scrollable, BlockStack
 } from '@shopify/polaris';
@@ -10,162 +11,50 @@ import '@shopify/polaris/build/esm/styles.css';
 import { useState, useCallback } from 'react';
 import { useLocalStorage } from "./useLocalStorage";
 import { ClipboardIcon } from '@shopify/polaris-icons';
-import { useLiquid, RENDER_STATUS } from 'react-liquid'
 
 function App() {
-
-  const [shopifyTemplate, setShopifyTemplate] = useLocalStorage('shopify_template', '');
-  let [orderPayload, setOrderPayload] = useLocalStorage('order_payload', '');
-  let [shopPayload, setShopPayload] = useLocalStorage('shop_payload', '');
-  let [mechanicTemplate, setMechanicTemplate] = useState();
- 
-  fetch('/mechanic-email-migrator/pre-email.liquid')
-    .then((r) => r.text())
-    .then(text  => {
-      mechanicTemplate = text + shopifyTemplate;
-      setMechanicTemplate(text + shopifyTemplate);
-    }) 
   
-  const handleShopifyTemplateChange = useCallback(
-    (shopifyTemplate) => { 
-      setShopifyTemplate(shopifyTemplate);
-    },
-    [],
-  );
-
-  const handleOrderPayloadChange = useCallback(
-    (orderPayload) => { 
-      setOrderPayload(orderPayload);
-    },
-    [],
-  );
-
-  const handleShopPayloadChange = useCallback(
-    (shopPayload) => { 
-      setShopPayload(shopPayload);
-    },
-    [],
-  );
-
-  const [active, setActive] = useState(false);
-
-  const toggleActive = useCallback(() => setActive((active) => !active), []);
-
-  const toastMarkup = active ? (
-    <Toast content="Copied Mechanic template to clipboard" onDismiss={toggleActive} />
-  ) : null;
-
-  const handleCopyButton = useCallback(() => {
-    navigator.clipboard.writeText(mechanicTemplate);
-    toggleActive();
-  }, []);
-
-  const data = {
-    transactions: [],
-    order: orderPayload ? JSON.parse(orderPayload) : "",
-    shop: shopPayload ? JSON.parse(shopPayload) : "",
-  }
-  const { status, markup } = useLiquid(mechanicTemplate, data)
-
   return (
     <AppProvider i18n={enTranslations}>
       <Frame>
-      <Page title="Shopify To Mechanic Email Template Converter" 
-      subtitle="Easily convert your Shopify email notification liquid templates to liquid that can be used in Mechanic tasks"
+      <Page title="Shopify Automation With A Smile" 
+      subtitle="Whether you're looking for services or tools, we've got you covered."
       >
         <BlockStack gap="500">
-          <Grid>
-            <Grid.Cell columnSpan={{xs: 6, sm: 3, md: 3, lg: 6, xl: 6}}>
-              <Card sectioned>    
-                <BlockStack gap="300">
-                  <Text as="h2" variant="headingSm">
-                    Shopify Template
-                  </Text>
-                  <Scrollable style={{height: '200px'}}>
-                    <TextField
-                      value={shopifyTemplate}
-                      onChange={handleShopifyTemplateChange}
-                      multiline={4}
-                      autoComplete="off"
-                    />
-                  </Scrollable>
-                </BlockStack>      
-              </Card>
-            </Grid.Cell>
-            <Grid.Cell columnSpan={{xs: 6, sm: 3, md: 3, lg: 6, xl: 6}}>
-                <Card sectioned>
-                  <BlockStack gap="300">
-                    <InlineStack align="space-between">
-                      <Text as="h2" variant="headingSm">
-                        Generated Mechanic template
-                      </Text>
-                      <Button icon={ClipboardIcon} onClick={handleCopyButton}>
-                        Copy
-                      </Button>
-                      {toastMarkup}
-                    </InlineStack>
-                    <Scrollable style={{height: '200px'}}>
-                      <TextField
-                        disabled
-                        value={mechanicTemplate}
-                        multiline={4}
-                        autoComplete="off"
-                      />             
-                    </Scrollable>
-                  </BlockStack>
-                </Card>
-            </Grid.Cell>        
-          </Grid>
-          <Grid>
-            <Grid.Cell columnSpan={{xs: 6, sm: 3, md: 3, lg: 6, xl: 6}}>
-              <Card sectioned>    
-                <BlockStack gap="300">
-                  <Text as="h2" variant="headingSm">
-                    Order Payload
-                  </Text>
-                  <Scrollable style={{height: '200px'}}>
-                    <TextField
-                      value={orderPayload}
-                      onChange={handleOrderPayloadChange}
-                      multiline={4}
-                      autoComplete="off"
-                    />
-                  </Scrollable>
-                </BlockStack>      
-              </Card>
-            </Grid.Cell>
-            <Grid.Cell columnSpan={{xs: 6, sm: 3, md: 3, lg: 6, xl: 6}}>
-              <Card>    
-                <BlockStack gap="300">
-                  <Text as="h2" variant="headingSm">
-                    Shop Details
-                  </Text>
-                  <Scrollable style={{height: '200px'}}>
-                    <TextField
-                      value={shopPayload}
-                      onChange={handleShopPayloadChange}
-                      multiline={4}
-                      autoComplete="off"
-                    />
-                  </Scrollable>
-                </BlockStack>      
-              </Card>
-            </Grid.Cell>        
-          </Grid>
+          <img width="100%" src="/flow-hire.gif"></img>
+          <MediaCard
+            title="Getting Started"
+            primaryAction={{
+              content: 'Learn about getting started',
+              onAction: () => {},
+            }}
+            description="Discover how Shopify can power up your entrepreneurial journey."
+            popoverActions={[{content: 'Dismiss', onAction: () => {}}]}
+          >
+            <img
+              alt=""
+              width="100%"
+              height="100%"
+              style={{
+                objectFit: 'cover',
+                objectPosition: 'center',
+              }}
+              src="https://burst.shopifycdn.com/photos/business-woman-smiling-in-office.jpg?width=1850"
+            />
+          </MediaCard>
           <Card>
-            <Text as="h2" variant="headingSm">Preview</Text>
-            <iframe id="email-preview" srcDoc={markup} width="100%" height="1000"></iframe>
+            
           </Card>
+
         </BlockStack>
         <FooterHelp>
-          This is an {' '}
-          <Link monochrome url="https://github.com/kalenjordan/mechanic-email-migrator">
-            open source project 
+          Find me on  {' '}
+          <Link monochrome url="https://twitter.com/kalenjordan">
+            Twitter
           </Link>
-          {' '}          
-          sponsored by{' '}
-          <Link monochrome url="https://mechanic.dev/">
-            Mechanic
+          {' '} or {' '}
+          <Link monochrome url="https://linkedin.com/in/kalen">
+            LinkedIn
           </Link>.
 
         </FooterHelp>
