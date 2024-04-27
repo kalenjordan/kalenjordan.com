@@ -16,12 +16,14 @@ function App() {
   
   return (
     <AppProvider i18n={enTranslations}>
+      <video width="100%" autoplay="autoplay">
+        <source src="flow-hire.mp4"/>
+      </video>
       <Frame>
       <Page title="Shopify Automation With A Smile" 
       subtitle="Whether you're looking for services or tools, we've got you covered."
       >
         <BlockStack gap="500">
-          <img width="100%" src="/flow-hire.gif"></img>
           <MediaCard
             title="Getting Started"
             primaryAction={{
