@@ -46,7 +46,8 @@ function App() {
                       10 Hours
                     </Text>
                     <Text as="p" variant="bodyMd">
-                      Tall
+                      With 10 hours of consulting, let's get off to the races
+                      with a quick win.
                     </Text>
                     <Button icon={CartIcon}>$1200</Button>
                   </BlockStack>
@@ -59,7 +60,8 @@ function App() {
                       20 Hours
                     </Text>
                     <Text as="p" variant="bodyMd">
-                      Grande
+                      With 20 hours of consulting, we'll have a little more time
+                      to get things just right.
                     </Text>
                     <Button icon={CartIcon}>$2100</Button>
                   </BlockStack>
@@ -77,7 +79,7 @@ function App() {
                       </Badge>
                     </InlineStack>
                     <Text as="p" variant="bodyMd">
-                      Venti
+                      With a 30 hour consulting package, we're ready to cook.
                     </Text>
                     <Button icon={CartIcon}>$3000</Button>
                   </BlockStack>
