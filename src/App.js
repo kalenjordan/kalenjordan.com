@@ -3,10 +3,11 @@ import "./App.css";
 import enTranslations from "@shopify/polaris/locales/en.json";
 import {
   AppProvider,
+  Badge,
   Bleed,
-  Box,
   Button,
   Card,
+  Divider,
   Grid,
   Page,
   Text,
@@ -16,6 +17,7 @@ import {
   Link,
   Frame,
   BlockStack,
+  InlineGrid,
 } from "@shopify/polaris";
 import "@shopify/polaris/build/esm/styles.css";
 import { CartIcon } from "@shopify/polaris-icons";
@@ -66,9 +68,14 @@ function App() {
               <Grid.Cell columnSpan={{ xs: 6, sm: 2, md: 2, lg: 4, xl: 4 }}>
                 <Card>
                   <BlockStack gap="300">
-                    <Text as="h2" variant="headingSm">
-                      30 Hours
-                    </Text>
+                    <InlineStack gap="200">
+                      <Text as="h2" variant="headingSm">
+                        30 Hours
+                      </Text>
+                      <Badge gap="500" tone="success">
+                        Best Value
+                      </Badge>
+                    </InlineStack>
                     <Text as="p" variant="bodyMd">
                       Venti
                     </Text>
@@ -77,10 +84,29 @@ function App() {
                 </Card>
               </Grid.Cell>
             </Grid>
-          </BlockStack>
-          <FooterHelp>
-            <InlineStack gap="200">
-              <Thumbnail size="extraSmall" source="kalen-circle.png" />
+            <BlockStack gap="400">
+              <Text alignment="center" tone="subdued">
+                Systems I've integrated with
+              </Text>
+              <InlineStack gap="600" align="center">
+                <img
+                  className="logo shopify"
+                  src="logo-shopify.png"
+                  alt="Shopify Logo"
+                />
+                <img
+                  className="logo shopify-plus"
+                  src="logo-shopify-plus.png"
+                  alt="Shopify Plus Logo"
+                />
+                <img className="logo klaviyo" src="logo-klaviyo.png" />
+                <img className="logo xero" src="logo-xero.png" />
+                <img className="logo recharge" src="logo-recharge.png" />
+              </InlineStack>
+            </BlockStack>
+            <Divider borderColor="border" />
+            <InlineStack gap="200" align="center">
+              <Thumbnail size="extraSmall" source="kalen-avatar-circle.png" />
               <Text>
                 Find me on{" "}
                 <Link monochrome url="https://twitter.com/kalenjordan">
@@ -93,7 +119,7 @@ function App() {
                 .
               </Text>
             </InlineStack>
-          </FooterHelp>
+          </BlockStack>
         </Page>
       </Frame>
     </AppProvider>
