@@ -49,7 +49,7 @@ function App() {
                       With 10 hours of consulting, let's get off to the races
                       with a quick win.
                     </Text>
-                    <Button icon={CartIcon}>$1200</Button>
+                    <Button icon={CartIcon}>$1,200</Button>
                   </BlockStack>
                 </Card>
               </Grid.Cell>
@@ -63,7 +63,7 @@ function App() {
                       With 20 hours of consulting, we'll have a little more time
                       to get things just right.
                     </Text>
-                    <Button icon={CartIcon}>$2100</Button>
+                    <Button icon={CartIcon}>$2,100</Button>
                   </BlockStack>
                 </Card>
               </Grid.Cell>
@@ -81,7 +81,7 @@ function App() {
                     <Text as="p" variant="bodyMd">
                       With a 30 hour consulting package, we're ready to cook.
                     </Text>
-                    <Button icon={CartIcon}>$3000</Button>
+                    <Button icon={CartIcon}>$3k</Button>
                   </BlockStack>
                 </Card>
               </Grid.Cell>
