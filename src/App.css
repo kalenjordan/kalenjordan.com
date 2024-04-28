@@ -50,6 +50,11 @@ iframe#email-preview {
 .Polaris-Frame {
   background-image: url("/public/background.png");
   background-size: 1200px;
+  zoom: 1.2;
+}
+
+.Polaris-Frame__Content {
+  zoom: 0.9;
 }
 
 video {
