@@ -1,7 +1,7 @@
 {
   "name": "kalenjordan.com",
   "version": "0.1.0",
-  "homepage": "https://kalenjordan.com",
+  "homepage": "https://kalenjordan.github.io",
   "private": true,
   "dependencies": {
     "@shopify/polaris": "^13.2.0",
