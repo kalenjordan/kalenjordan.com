@@ -19,6 +19,7 @@ import {
   BlockStack,
   InlineGrid,
   Avatar,
+  Icon,
 } from "@shopify/polaris";
 import "@shopify/polaris/build/esm/styles.css";
 import { CartIcon } from "@shopify/polaris-icons";
@@ -42,10 +43,11 @@ function App() {
             <Grid columns={{ sm: 3 }}>
               <Grid.Cell columnSpan={{ xs: 6, sm: 4, md: 2, lg: 8, xl: 8 }}>
                 <Card>
-                  <BlockStack gap="300" as="lfdsafdsa">
+                  <BlockStack gap="300">
                     <Text as="h2" variant="headingSm">
                       Services
                     </Text>
+
                     <Text as="p" variant="bodyMd">
                       Having built hundreds of workflow automations for Shopify
                       using 3rd party apps, Flow, and custom code, if there's
