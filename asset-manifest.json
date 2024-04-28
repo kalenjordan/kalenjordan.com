@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.ed938f93.css",
-    "main.js": "/static/js/main.8835f9ad.js",
-    "static/js/453.13f17f38.chunk.js": "/static/js/453.13f17f38.chunk.js",
-    "static/media/background.png": "/static/media/background.7f1e8dd55c1f29b69f9f.png",
-    "index.html": "/index.html",
-    "main.ed938f93.css.map": "/static/css/main.ed938f93.css.map",
-    "main.8835f9ad.js.map": "/static/js/main.8835f9ad.js.map",
-    "453.13f17f38.chunk.js.map": "/static/js/453.13f17f38.chunk.js.map"
+    "main.css": "/kalenjordan.com/static/css/main.6a54ee64.css",
+    "main.js": "/kalenjordan.com/static/js/main.b99ac32b.js",
+    "static/js/453.13f17f38.chunk.js": "/kalenjordan.com/static/js/453.13f17f38.chunk.js",
+    "static/media/background.png": "/kalenjordan.com/static/media/background.7f1e8dd55c1f29b69f9f.png",
+    "index.html": "/kalenjordan.com/index.html",
+    "main.6a54ee64.css.map": "/kalenjordan.com/static/css/main.6a54ee64.css.map",
+    "main.b99ac32b.js.map": "/kalenjordan.com/static/js/main.b99ac32b.js.map",
+    "453.13f17f38.chunk.js.map": "/kalenjordan.com/static/js/453.13f17f38.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed938f93.css",
-    "static/js/main.8835f9ad.js"
+    "static/css/main.6a54ee64.css",
+    "static/js/main.b99ac32b.js"
   ]
 }
