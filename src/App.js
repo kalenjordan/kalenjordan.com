@@ -18,6 +18,7 @@ import {
   Frame,
   BlockStack,
   InlineGrid,
+  Avatar,
 } from "@shopify/polaris";
 import "@shopify/polaris/build/esm/styles.css";
 import { CartIcon } from "@shopify/polaris-icons";
@@ -39,7 +40,54 @@ function App() {
               </Bleed>
             </Card>
             <Grid columns={{ sm: 3 }}>
-              <Grid.Cell columnSpan={{ xs: 6, sm: 2, md: 2, lg: 4, xl: 4 }}>
+              <Grid.Cell columnSpan={{ xs: 6, sm: 4, md: 2, lg: 8, xl: 8 }}>
+                <Card>
+                  <BlockStack gap="300" as="lfdsafdsa">
+                    <Text as="h2" variant="headingSm">
+                      Services
+                    </Text>
+                    <Text as="p" variant="bodyMd">
+                      Having built hundreds of workflow automations for Shopify
+                      using 3rd party apps, Flow, and custom code, if there's
+                      something that's possible to do in Shopify, I should be
+                      able to do it for you. And usually pretty quickly.
+                    </Text>
+                    <Text as="p" variant="bodyMd">
+                      I can also understand requirements and communicate well,
+                      so that you won't have to bang your head against the wall
+                      trying to articulate exactly what needs to happen and
+                      every potential edge case that may need to be handled.
+                      I'll figure it out.
+                    </Text>
+                  </BlockStack>
+                </Card>
+              </Grid.Cell>
+              <Grid.Cell columnSpan={{ xs: 6, sm: 4, md: 1, lg: 4, xl: 4 }}>
+                <Card>
+                  <BlockStack gap="300">
+                    <InlineStack gap="200">
+                      <Avatar size="xs" source="flow-helper-icon.png" />
+                      <Text as="h2" variant="headingSm">
+                        Flow Helper Shopify App
+                      </Text>
+                    </InlineStack>
+                    <Text as="p" variant="bodyMd">
+                      Flow Helper is a Shopify app that helps you build more
+                      powerful workflows with Shopify Flow by adding more
+                      triggers and actions, such as product, customer, and order
+                      update triggers.
+                    </Text>
+                    <span>
+                      <Badge as="span" tone="info">
+                        Pending Review
+                      </Badge>
+                    </span>
+                  </BlockStack>
+                </Card>
+              </Grid.Cell>
+            </Grid>
+            <Grid columns={{ sm: 3 }}>
+              <Grid.Cell columnSpan={{ xs: 6, sm: 4, md: 1, lg: 4, xl: 4 }}>
                 <Card>
                   <BlockStack gap="300" as="lfdsafdsa">
                     <Text as="h2" variant="headingSm">
@@ -49,11 +97,13 @@ function App() {
                       With 10 hours of consulting, let's get off to the races
                       with a quick win.
                     </Text>
-                    <Button icon={CartIcon}>$1,200</Button>
+                    <span>
+                      <Button icon={CartIcon}>$1,200</Button>
+                    </span>
                   </BlockStack>
                 </Card>
               </Grid.Cell>
-              <Grid.Cell columnSpan={{ xs: 6, sm: 2, md: 2, lg: 4, xl: 4 }}>
+              <Grid.Cell columnSpan={{ xs: 6, sm: 4, md: 1, lg: 4, xl: 4 }}>
                 <Card>
                   <BlockStack gap="300">
                     <Text as="h2" variant="headingSm">
@@ -63,11 +113,13 @@ function App() {
                       With 20 hours of consulting, we'll have a little more time
                       to get things just right.
                     </Text>
-                    <Button icon={CartIcon}>$2,100</Button>
+                    <span>
+                      <Button icon={CartIcon}>$2,100</Button>
+                    </span>
                   </BlockStack>
                 </Card>
               </Grid.Cell>
-              <Grid.Cell columnSpan={{ xs: 6, sm: 2, md: 2, lg: 4, xl: 4 }}>
+              <Grid.Cell columnSpan={{ xs: 6, sm: 4, md: 1, lg: 4, xl: 4 }}>
                 <Card>
                   <BlockStack gap="300">
                     <InlineStack gap="200">
@@ -79,48 +131,75 @@ function App() {
                       </Badge>
                     </InlineStack>
                     <Text as="p" variant="bodyMd">
-                      With a 30 hour consulting package, we're ready to cook.
+                      With a 30 hour consulting package, we're ready to start
+                      cooking with gas.
                     </Text>
-                    <Button icon={CartIcon}>$3k</Button>
+                    <span>
+                      <Button icon={CartIcon}>$3,000</Button>
+                    </span>
                   </BlockStack>
                 </Card>
               </Grid.Cell>
             </Grid>
-            <BlockStack gap="400">
-              <Text alignment="center" tone="subdued">
-                Systems I've integrated with
-              </Text>
-              <InlineStack gap="600" align="center">
-                <img
-                  className="logo shopify"
-                  src="logo-shopify.png"
-                  alt="Shopify Logo"
-                />
-                <img
-                  className="logo shopify-plus"
-                  src="logo-shopify-plus.png"
-                  alt="Shopify Plus Logo"
-                />
-                <img className="logo klaviyo" src="logo-klaviyo.png" />
-                <img className="logo xero" src="logo-xero.png" />
-                <img className="logo recharge" src="logo-recharge.png" />
-              </InlineStack>
-            </BlockStack>
-            <Divider borderColor="border" />
-            <InlineStack gap="200" align="center">
-              <Thumbnail size="extraSmall" source="kalen-avatar-circle.png" />
-              <Text>
-                Find me on{" "}
-                <Link monochrome url="https://twitter.com/kalenjordan">
-                  Twitter
-                </Link>{" "}
-                or{" "}
-                <Link monochrome url="https://linkedin.com/in/kalen">
-                  LinkedIn
-                </Link>
-                .
-              </Text>
-            </InlineStack>
+            <FooterHelp>
+              <BlockStack gap="500">
+                <BlockStack gap="100">
+                  <Text alignment="center" tone="subdued">
+                    Brands I've worked with
+                  </Text>
+                  <InlineStack gap="600" align="center">
+                    <img
+                      className="logo chubbies"
+                      src="logo-chubbies.png"
+                      style={{ height: "30px" }}
+                    />
+                    <img
+                      className="logo rothys"
+                      src="logo-rothys.png"
+                      style={{ height: "35px" }}
+                    />
+                  </InlineStack>
+                </BlockStack>
+                <BlockStack gap="200">
+                  <Text alignment="center" tone="subdued">
+                    Systems I've integrated with
+                  </Text>
+                  <InlineStack gap="600" align="center">
+                    <img
+                      className="logo shopify"
+                      src="logo-shopify.png"
+                      alt="Shopify Logo"
+                    />
+                    <img
+                      className="logo shopify-plus"
+                      src="logo-shopify-plus.png"
+                      alt="Shopify Plus Logo"
+                    />
+                    <img className="logo klaviyo" src="logo-klaviyo.png" />
+                    <img className="logo xero" src="logo-xero.png" />
+                    <img className="logo recharge" src="logo-recharge.png" />
+                  </InlineStack>
+                </BlockStack>
+                <Divider borderColor="border" />
+                <InlineStack gap="200" align="center">
+                  <Thumbnail
+                    size="extraSmall"
+                    source="kalen-avatar-circle.png"
+                  />
+                  <Text>
+                    Find me on{" "}
+                    <Link monochrome url="https://twitter.com/kalenjordan">
+                      Twitter
+                    </Link>{" "}
+                    or{" "}
+                    <Link monochrome url="https://linkedin.com/in/kalen">
+                      LinkedIn
+                    </Link>
+                    .
+                  </Text>
+                </InlineStack>
+              </BlockStack>
+            </FooterHelp>
           </BlockStack>
         </Page>
       </Frame>

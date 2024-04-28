@@ -49,8 +49,7 @@ iframe#email-preview {
 
 .Polaris-Frame {
   background-image: url("/public/background.png");
-  background-repeat: repeat-x repeat-y;
-  background-size: 300px;
+  background-size: 1200px;
 }
 
 video {
