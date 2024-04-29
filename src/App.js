@@ -202,21 +202,30 @@ function App() {
                 </BlockStack>
                 <Divider borderColor="border" />
                 <InlineStack gap="200" align="center">
-                  <Thumbnail
-                    size="extraSmall"
-                    source="kalen-avatar-circle.png"
-                  />
                   <Text>
-                    Find me on{" "}
+                    Hit me on{" "}
                     <Link monochrome url="https://twitter.com/kalenjordan">
-                      Twitter
-                    </Link>{" "}
-                    or{" "}
+                      twitter
+                    </Link>
+                    {",  "}
                     <Link monochrome url="https://linkedin.com/in/kalen">
-                      LinkedIn
+                      linkedin
+                    </Link>
+                    {", or "}
+                    <Link monochrome url="mailto:kalenj@gmail.com">
+                      email
                     </Link>
                     .
                   </Text>
+                </InlineStack>
+                <InlineStack align="center">
+                  <span>
+                    <Thumbnail
+                      as="span"
+                      size="extraSmall"
+                      source="kalen-avatar-circle.png"
+                    />
+                  </span>
                 </InlineStack>
               </BlockStack>
             </FooterHelp>
