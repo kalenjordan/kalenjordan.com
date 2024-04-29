@@ -100,7 +100,7 @@ function App() {
                       with a quick win.
                     </Text>
                     <span>
-                      <Button icon={CartIcon}>$1,200</Button>
+                      <Button icon={CartIcon} url="https://buy.stripe.com/dR601u0mX4eP9vafZ4" target="_blank">$1,200</Button>
                     </span>
                   </BlockStack>
                 </Card>
@@ -116,8 +116,10 @@ function App() {
                       to get things just right.
                     </Text>
                     <span>
-                      <Button icon={CartIcon}>$2,100</Button>
-                    </span>
+                      <Button url="https://buy.stripe.com/7sI15yedNeTtazeeV1" target="_blank" icon={CartIcon}>
+                        $2,100
+                      </Button>
+                    </span>  
                   </BlockStack>
                 </Card>
               </Grid.Cell>
@@ -137,7 +139,7 @@ function App() {
                       cooking with gas.
                     </Text>
                     <span>
-                      <Button icon={CartIcon}>$3,000</Button>
+                      <Button url="https://buy.stripe.com/28oaG85Hh3aL6iY3ch" target="_blank" icon={CartIcon}>$3,000</Button>
                     </span>
                   </BlockStack>
                 </Card>
