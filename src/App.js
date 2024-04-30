@@ -105,8 +105,8 @@ function App() {
                             20 Hours
                           </Text>
                           <Text as="p" variant="bodyLg">
-                            With 20 hours of consulting, we'll have a little
-                            more time to get things just right.
+                            With 20 hours, we'll have a little more time to get
+                            things just right.
                           </Text>
                           <span>
                             <Button
