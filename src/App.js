@@ -178,6 +178,11 @@ function App() {
                       src="logo-rothys.png"
                       style={{ height: "45px" }}
                     />
+                    <img
+                      className="logo"
+                      src="logo-rainbow.png"
+                      style={{ height: "40px" }}
+                    />
                   </InlineStack>
                 </BlockStack>
                 <BlockStack gap="400">
