@@ -171,16 +171,16 @@ function App() {
                     <img
                       className="logo chubbies"
                       src="logo-chubbies.png"
-                      style={{ height: "30px" }}
+                      style={{ height: "40px" }}
                     />
                     <img
                       className="logo rothys"
                       src="logo-rothys.png"
-                      style={{ height: "35px" }}
+                      style={{ height: "45px" }}
                     />
                   </InlineStack>
                 </BlockStack>
-                <BlockStack gap="200">
+                <BlockStack gap="400">
                   <Text alignment="center" tone="subdued">
                     Systems I've integrated with
                   </Text>
