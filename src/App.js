@@ -49,7 +49,7 @@ function App() {
                 <BlockStack gap="500">
                   <Card title="Order details" sectioned>
                     <BlockStack gap="300">
-                      <Text as="h2" variant="headingLg">
+                      <Text as="h2" variant="headingMd">
                         Services
                       </Text>
 
