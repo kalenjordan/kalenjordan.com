@@ -6,6 +6,7 @@ import {
   Badge,
   Bleed,
   Button,
+  Box,
   Card,
   Divider,
   Grid,
@@ -34,13 +35,15 @@ function App() {
           subtitle="I love building Shopify integrations. Whether using Flow, IPaaS systems, or building custom - if you need any integrations built for Shopify or other systems you integrate with, I'm your guy."
         >
           <BlockStack gap="500">
-            <Card>
-              <Bleed marginInline="400" marginBlock="400">
-                <video width="100%" autoPlay="autoplay" loop="loop" controls>
-                  <source src="flow-hire.mp4" />
-                </video>
-              </Bleed>
-            </Card>
+            <Box paddingInline={{ xs: "400", sm: "0" }}>
+              <Card>
+                <Bleed marginInline="400" marginBlock="400">
+                  <video width="100%" autoPlay="autoplay" loop="loop" controls>
+                    <source src="flow-hire.mp4" />
+                  </video>
+                </Bleed>
+              </Card>
+            </Box>
             <Layout>
               <Layout.Section>
                 <BlockStack gap="500">
