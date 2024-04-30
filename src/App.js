@@ -133,7 +133,7 @@ function App() {
                           </InlineStack>
                           <Text as="p" variant="bodyLg">
                             With a 30 hour consulting package, we're ready to
-                            start cooking with gas.
+                            start cooking with fire.
                           </Text>
                           <span>
                             <Button
