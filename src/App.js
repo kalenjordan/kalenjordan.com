@@ -49,25 +49,25 @@ function App() {
                 <BlockStack gap="500">
                   <Card title="Order details" sectioned>
                     <BlockStack gap="300">
-                      <Text as="h2" variant="headingSm">
+                      <Text as="h2" variant="headingLg">
                         Services
                       </Text>
 
-                      <Text as="p" variant="bodyMd">
+                      <Text as="p" variant="bodyLg">
                         Having built hundreds of workflow automations for
                         Shopify using 3rd party apps, Flow, and custom code, if
                         there's something that's possible to do in Shopify, I
                         should be able to do it for you. And usually pretty
                         quickly.
                       </Text>
-                      <Text as="p" variant="bodyMd">
+                      <Text as="p" variant="bodyLg">
                         I can also understand requirements and communicate well,
                         so that you won't have to bang your head against the
                         wall trying to articulate exactly what needs to happen
                         and every potential edge case that may need to be
                         handled. I'll figure it out.
                       </Text>
-                      <Text as="p" variant="bodyMd">
+                      <Text as="p" variant="bodyLg">
                         If you're looking for help with anything along these
                         lines, I can't wait to talk to you!
                       </Text>
@@ -79,10 +79,10 @@ function App() {
                         columnSpan={{ xs: 6, sm: 4, md: 1, lg: 4, xl: 4 }}
                       >
                         <BlockStack gap="300" as="lfdsafdsa">
-                          <Text as="h2" variant="headingSm">
+                          <Text as="h2" variant="headingMd">
                             10 Hours
                           </Text>
-                          <Text as="p" variant="bodyMd">
+                          <Text as="p" variant="bodyLg">
                             With 10 hours of consulting, let's get off to the
                             races with a quick win.
                           </Text>
@@ -101,10 +101,10 @@ function App() {
                         columnSpan={{ xs: 6, sm: 4, md: 1, lg: 4, xl: 4 }}
                       >
                         <BlockStack gap="300">
-                          <Text as="h2" variant="headingSm">
+                          <Text as="h2" variant="headingMd">
                             20 Hours
                           </Text>
-                          <Text as="p" variant="bodyMd">
+                          <Text as="p" variant="bodyLg">
                             With 20 hours of consulting, we'll have a little
                             more time to get things just right.
                           </Text>
@@ -124,14 +124,14 @@ function App() {
                       >
                         <BlockStack gap="300">
                           <InlineStack gap="200">
-                            <Text as="h2" variant="headingSm">
+                            <Text as="h2" variant="headingMd">
                               30 Hours
                             </Text>
                             <Badge gap="500" tone="success">
                               Best Value
                             </Badge>
                           </InlineStack>
-                          <Text as="p" variant="bodyMd">
+                          <Text as="p" variant="bodyLg">
                             With a 30 hour consulting package, we're ready to
                             start cooking with gas.
                           </Text>
@@ -156,11 +156,11 @@ function App() {
                     <BlockStack gap="300">
                       <InlineStack gap="200">
                         <Avatar size="xs" source="flow-helper-icon.png" />
-                        <Text as="h2" variant="headingSm">
+                        <Text as="h2" variant="headingMd">
                           Flow Helper Shopify App
                         </Text>
                       </InlineStack>
-                      <Text as="p" variant="bodyMd">
+                      <Text as="p" variant="bodyLg">
                         A Shopify app that adds missing triggers and actions to
                         use natively within Flow, including bulk flow runs.
                       </Text>
