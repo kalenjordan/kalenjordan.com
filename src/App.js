@@ -19,9 +19,7 @@ import {
   Link,
   Frame,
   BlockStack,
-  InlineGrid,
   Avatar,
-  Icon,
 } from "@shopify/polaris";
 import "@shopify/polaris/build/esm/styles.css";
 import { CartIcon } from "@shopify/polaris-icons";
@@ -40,7 +38,7 @@ function App() {
                   alignment="center"
                   fontWeight="regular"
                 >
-                  Shopify Automation With A Smile 😀
+                  Shopify Automation Engineer As A Service
                 </Text>
                 <Box paddingInline={{ xs: 200, lg: 3200 }}>
                   <Text
@@ -49,10 +47,9 @@ function App() {
                     fontWeight="regular"
                     className="subtitle"
                   >
-                    I love building Shopify integrations. Whether using Flow,
-                    IPaaS systems, or building custom - if you need any
-                    integrations built for Shopify or other systems you
-                    integrate with, I'm your guy.
+                    Whether using Flow, IPaaS systems, or building custom - if
+                    you need any automation done in Shopify or integrations with
+                    systems, I'm your guy.
                   </Text>
                 </Box>
               </BlockStack>
