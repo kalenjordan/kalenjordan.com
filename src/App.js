@@ -38,7 +38,12 @@ function App() {
             <Box paddingInline={{ xs: "400", sm: "0" }}>
               <Card>
                 <Bleed marginInline="400" marginBlock="400">
-                  <video width="100%" autoPlay="autoplay" loop="loop" controls>
+                  <video
+                    width="100%"
+                    autoPlay="autoplay"
+                    loop="loop"
+                    muted="muted"
+                  >
                     <source src="flow-hire.mp4" />
                   </video>
                 </Bleed>
