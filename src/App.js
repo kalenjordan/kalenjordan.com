@@ -50,7 +50,7 @@ function App() {
               </Card>
             </Box>
             <BlockStack gap="100">
-              <Box paddingBlockStart="400" paddingBlockEnd="400">
+              <Box paddingBlockStart="800" paddingBlockEnd="800">
                 <Text alignment="center" tone="subdued">
                   Brands I've worked with
                 </Text>
