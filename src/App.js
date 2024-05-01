@@ -54,7 +54,7 @@ function App() {
                 <Text alignment="center" tone="subdued">
                   Brands I've worked with
                 </Text>
-                <InlineStack gap="600" align="center">
+                <InlineStack gap={{ xs: 0, sm: 100, lg: 800 }} align="center">
                   <img
                     className="logo chubbies"
                     src="logo-chubbies.png"
@@ -63,12 +63,12 @@ function App() {
                   <img
                     className="logo rothys"
                     src="logo-rothys.png"
-                    style={{ height: "45px" }}
+                    style={{ height: "35px", marginTop: "5px" }}
                   />
                   <img
                     className="logo"
                     src="logo-rainbow.png"
-                    style={{ height: "40px" }}
+                    style={{ height: "35px", marginBottom: "5px" }}
                   />
                 </InlineStack>
               </Box>
