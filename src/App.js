@@ -49,13 +49,37 @@ function App() {
                 </Bleed>
               </Card>
             </Box>
+            <BlockStack gap="100">
+              <Box paddingBlockStart="400" paddingBlockEnd="400">
+                <Text alignment="center" tone="subdued">
+                  Brands I've worked with
+                </Text>
+                <InlineStack gap="600" align="center">
+                  <img
+                    className="logo chubbies"
+                    src="logo-chubbies.png"
+                    style={{ height: "40px" }}
+                  />
+                  <img
+                    className="logo rothys"
+                    src="logo-rothys.png"
+                    style={{ height: "45px" }}
+                  />
+                  <img
+                    className="logo"
+                    src="logo-rainbow.png"
+                    style={{ height: "40px" }}
+                  />
+                </InlineStack>
+              </Box>
+            </BlockStack>
             <Layout>
               <Layout.Section>
                 <BlockStack gap="500">
                   <Card title="Order details" sectioned>
                     <BlockStack gap="300">
                       <Text as="h2" variant="headingMd">
-                        Services
+                        How I can help
                       </Text>
 
                       <Text as="p" variant="bodyLg">
@@ -66,16 +90,43 @@ function App() {
                         quickly.
                       </Text>
                       <Text as="p" variant="bodyLg">
-                        I can also understand requirements and communicate well,
-                        so that you won't have to bang your head against the
-                        wall trying to articulate exactly what needs to happen
-                        and every potential edge case that may need to be
-                        handled. I'll figure it out.
+                        Don't bang your head against the wall trying to
+                        articulate exactly what needs to happen. Figuring it out
+                        is my specialty.
                       </Text>
                       <Text as="p" variant="bodyLg">
-                        If you're looking for help with anything along these
-                        lines, I can't wait to talk to you!
+                        So, if you're looking for help with anything along these
+                        lines, I can't wait to get started!
                       </Text>
+                      <Text as="p" variant="bodyLg">
+                        Hit me on{" "}
+                        <Link monochrome url="https://twitter.com/kalenjordan">
+                          twitter
+                        </Link>
+                        {",  "}
+                        <Link monochrome url="https://linkedin.com/in/kalen">
+                          linkedin
+                        </Link>
+                        {", or "}
+                        <Link monochrome url="mailto:kalenj@gmail.com">
+                          email
+                        </Link>
+                        .
+                      </Text>
+                      <InlineStack gap="200">
+                        <span>
+                          <Thumbnail
+                            as="span"
+                            size="small"
+                            source="kalen-avatar-circle.png"
+                          />
+                        </span>
+                        <Text as="p" variant="bodyLg">
+                          Kalen Jordan
+                          <br />
+                          Shopify Automation Specialist
+                        </Text>
+                      </InlineStack>
                     </BlockStack>
                   </Card>
                   <Card>
@@ -192,28 +243,6 @@ function App() {
             </Layout>
             <FooterHelp>
               <BlockStack gap="500">
-                <BlockStack gap="100">
-                  <Text alignment="center" tone="subdued">
-                    Brands I've worked with
-                  </Text>
-                  <InlineStack gap="600" align="center">
-                    <img
-                      className="logo chubbies"
-                      src="logo-chubbies.png"
-                      style={{ height: "40px" }}
-                    />
-                    <img
-                      className="logo rothys"
-                      src="logo-rothys.png"
-                      style={{ height: "45px" }}
-                    />
-                    <img
-                      className="logo"
-                      src="logo-rainbow.png"
-                      style={{ height: "40px" }}
-                    />
-                  </InlineStack>
-                </BlockStack>
                 <BlockStack gap="400">
                   <Text alignment="center" tone="subdued">
                     Systems I've integrated with
@@ -235,32 +264,7 @@ function App() {
                   </InlineStack>
                 </BlockStack>
                 <Divider borderColor="border" />
-                <InlineStack gap="200" align="center">
-                  <Text>
-                    Hit me on{" "}
-                    <Link monochrome url="https://twitter.com/kalenjordan">
-                      twitter
-                    </Link>
-                    {",  "}
-                    <Link monochrome url="https://linkedin.com/in/kalen">
-                      linkedin
-                    </Link>
-                    {", or "}
-                    <Link monochrome url="mailto:kalenj@gmail.com">
-                      email
-                    </Link>
-                    .
-                  </Text>
-                </InlineStack>
-                <InlineStack align="center">
-                  <span>
-                    <Thumbnail
-                      as="span"
-                      size="extraSmall"
-                      source="kalen-avatar-circle.png"
-                    />
-                  </span>
-                </InlineStack>
+                <Text alignment="center">Made with 💚 by Kalen Jordan</Text>
               </BlockStack>
             </FooterHelp>
           </BlockStack>

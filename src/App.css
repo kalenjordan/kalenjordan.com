@@ -63,9 +63,10 @@ iframe#email-preview {
 
 .Polaris-Frame {
   background: url("/public/background.png");
-  background-position: top center;
+  background-position: bottom left;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .Polaris-Frame__Content {
