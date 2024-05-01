@@ -38,9 +38,9 @@ function App() {
                   alignment="center"
                   fontWeight="regular"
                 >
-                  Shopify Automation Engineer As A Service
+                  Shopify Automation Engineer&nbsp;As&nbsp;A&nbsp;Service
                 </Text>
-                <Box paddingInline={{ xs: 200, lg: 3200 }}>
+                <Box paddingInline={{ xs: 600, lg: 3200 }}>
                   <Text
                     alignment="center"
                     variant="headingMd"
