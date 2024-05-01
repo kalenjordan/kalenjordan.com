@@ -178,18 +178,13 @@ function App() {
                   </Card>
                   <Card>
                     <Bleed marginInline="400" marginBlock="400">
-                      <div className="video-container">
-                        <iframe
-                          width="300"
-                          height="170"
-                          src="https://www.youtube.com/embed/U9jsIxIb-k8?si=bOHL8TKMG7eZ5h60"
-                          title="YouTube video player"
-                          frameborder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                          referrerpolicy="strict-origin-when-cross-origin"
-                          allowfullscreen
-                        ></iframe>
-                      </div>
+                      <video
+                        width="100%"
+                        controls="controls"
+                        poster="welcome.jpg"
+                      >
+                        <source src="welcome.mp4" />
+                      </video>
                     </Bleed>
                   </Card>
                 </BlockStack>
