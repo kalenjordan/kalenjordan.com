@@ -116,6 +116,9 @@ function App() {
                         </Link>
                         .
                       </Text>
+                      <Box padding="200">
+                        <Divider borderColor="border" />
+                      </Box>
                       <InlineStack gap="200">
                         <span>
                           <Thumbnail
