@@ -61,6 +61,11 @@ iframe#email-preview {
   border-style: none;
 }
 
+/* page subtitle */
+.Polaris-Text--headingMd {
+  text-shadow: #fff 1px 0 1px;
+}
+
 .Polaris-Frame {
   background: url("/public/background.png");
   background-position: bottom left;
